@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
-import hidden_4
+import hidden_4 as hidden
 
-def principal():
-    for i in dir(hidden_4):
-        if not (i[0] == '_' and i[1] == '_'):
-            print(i)
 if __name__ == "__main__":
-    principal()
+    for name in dir(hidden):
+        if not name.startswith('__'):
+            print(name)
