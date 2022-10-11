@@ -13,7 +13,7 @@ class Square:
 
         Args:
             size (int): size of a side of the square
-        
+
         Returns:
             None
         """
@@ -24,6 +24,7 @@ class Square:
                 raise ValueError("size must be >= 0")
             else:
                 self.__size = size
+
     def area(self):
         """calculates the square's area
 
