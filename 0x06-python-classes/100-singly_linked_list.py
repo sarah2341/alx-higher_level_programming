@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""module for a singly linked list"""
 
 class Node:
     """Represents a node in a singly linked list
@@ -28,7 +28,7 @@ class Node:
         Returns:
             data stored inside the node
         """
-        return self.__data
+        return (self.__data)
 
     @data.setter
     def data(self, value):
@@ -51,7 +51,7 @@ class Node:
         Returns:
             the next node in the linked list
         """
-        return self.__next_node
+        return (self.__next_node)
 
     @next_node.setter
     def next_node(self, value):
