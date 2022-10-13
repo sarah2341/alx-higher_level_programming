@@ -88,7 +88,7 @@ class SinglyLinkedList:
         Returns:
             None
         """
-        self.__head = None
+        self.head = None
 
     def sorted_insert(self, value):
         """ inserts a new Node instance into the correct sorted position
@@ -100,11 +100,11 @@ class SinglyLinkedList:
             None
         """
         new = Node(value)
-        tmp = self.__head
+        tmp = self.head
         if tmp is None or tmp.data >= value:
             if tmp:
                 new.next_node = tmp
-            self.__head = new
+            self.head = new
             return
         while tmp.next_node is not None:
             if tmp.next_node.data >= value:
@@ -120,7 +120,7 @@ class SinglyLinkedList:
             Formatted string representing the linked list
         """
         string = ""
-        tmp = self.__head
+        tmp = self.head
         while tmp is not None:
             string += str(tmp)
             if tmp.next_node is not None:
