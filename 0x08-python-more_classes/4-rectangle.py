@@ -44,7 +44,7 @@ class Rectangle:
 
     def area(self):
         """Return the area of the Rectangle."""
-        return (self.__width * self.__height)
+        return self.__width * self.__height
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
@@ -57,7 +57,7 @@ class Rectangle:
         Represents the rectangle with the # character.
         """
         string = ""
-        if self.__width != 0 or self.__height != 0:
+        if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
         return string
